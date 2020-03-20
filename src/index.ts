@@ -16,7 +16,7 @@ export async function main(options: ApplicationConfig = {}) {
       allowedHeaders: ["Content-Type", "authorizationToken", "userId"]
     },
   },
-    console.log(options);
+ //   console.log(options);
   const app = new Lb4DemoApplication(options);
   await app.boot();
   await app.start();
