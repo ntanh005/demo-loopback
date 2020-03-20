@@ -8,7 +8,7 @@ export async function main(options: ApplicationConfig = {}) {
   options.rest = {
     cors: {
       origin: '*',
-      methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+      methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
       preflightContinue: true,
       optionsSuccessStatus: 200,
       maxAge: 55500,
