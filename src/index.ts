@@ -9,8 +9,8 @@ export async function main(options: ApplicationConfig = {}) {
     cors: {
       origin: '*',
       methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-      preflightContinue: true,
-      optionsSuccessStatus: 200,
+      preflightContinue: false,
+      optionsSuccessStatus: 204,
       maxAge: 55500,
       credentials: true,
       allowedHeaders: ["Content-Type", "authorizationToken", "userId"]
