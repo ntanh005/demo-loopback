@@ -10,7 +10,7 @@ export async function main(options: ApplicationConfig = {
           methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
           preflightContinue: false,
           optionsSuccessStatus: 200,
-          maxAge: 86400,
+          maxAge: 55500,
           credentials: true,
           allowedHeaders : ["Content-Type", "authorizationToken", "userId"]
       },
