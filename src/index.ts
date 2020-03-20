@@ -14,8 +14,8 @@ export async function main(options: ApplicationConfig = {}) {
       maxAge: 55500,
       credentials: true,
       allowedHeaders: ["Content-Type", "authorizationToken", "userId"]
-    },
-  },
+    }
+  };
  //   console.log(options);
   const app = new Lb4DemoApplication(options);
   await app.boot();
