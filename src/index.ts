@@ -3,7 +3,13 @@ import {Lb4DemoApplication} from './application';
 
 export {Lb4DemoApplication};
 
-export async function main(options: ApplicationConfig = {}) {
+export async function main(options: ApplicationConfig = {
+  rest: {
+    cors: {
+      allowedHeaders: 'Content-Type,authorizationToken,userId'
+    }
+  }
+}) {
 
   
   console.log(options);
