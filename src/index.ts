@@ -3,11 +3,7 @@ import {Lb4DemoApplication} from './application';
 
 export {Lb4DemoApplication};
 
-export async function main( ) {
-
-  const options = {
-  };
-  
+export async function main(options: ApplicationConfig = {}) { 
   
   const app = new Lb4DemoApplication(options);
   await app.boot();
