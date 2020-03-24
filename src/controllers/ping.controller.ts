@@ -42,12 +42,12 @@ export class PingController {
   })
   ping(): object {
     // Reply with a greeting, the current time, the url, and request headers
-    //return {
-    //  greeting: 'Hello from LoopBack',
-    //  date: new Date(),
-    //  url: this.req.url,
-    //  headers: Object.assign({}, this.req.headers),
-    //};
-    return 'nguyen tan anh';
+    return {
+      greeting: 'Hello from LoopBack',
+      date: new Date(),
+      url: this.req.url,
+      headers: Object.assign({}, this.req.headers),
+    };
+
   }
 }
